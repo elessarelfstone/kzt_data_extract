@@ -1,0 +1,8 @@
+{
+  "code": "asr_ala",
+  "server_id": "90",
+  "rdt_id": "6",
+  "tns": "(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST =  10.10.70.63)(PORT = 1521)) ) (CONNECT_DATA = (SERVICE_NAME =  orcl1)))",
+  "user": "reporter",
+  "pass": "ciuyrhvv"
+}

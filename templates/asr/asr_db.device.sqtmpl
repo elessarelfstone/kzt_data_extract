@@ -1,0 +1,23 @@
+select
+    {rdt_id},
+    {server_id},
+    r.abonent_id,
+    r.device,
+    r.device_id,
+    r.link_id,
+    r.abonent_type_id,
+    r.device_group_id,
+    r.connect_type_id,
+    r.abn_adr_id,
+    r.dev_adr_id,
+    r.abn_town_id,
+    r.dev_town_id,
+    r.provider_id,
+    r.order_date,
+    r.sys_date,
+    r.department,
+    r.priority_09,
+    r.flag,
+    r.closed,
+    sysdate import_date
+from db.view_all_real r;

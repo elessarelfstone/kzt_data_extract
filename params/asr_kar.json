@@ -1,0 +1,8 @@
+{
+  "code": "asr_kar",
+  "server_id": "48",
+  "rdt_id": "1",
+  "tns": "(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST =  10.189.214.8)(PORT = 1521)) ) (CONNECT_DATA = (SERVICE_NAME = karaasr.Karaganda)))",
+  "user": "reporter",
+  "pass": "ciuyrhvv"
+}

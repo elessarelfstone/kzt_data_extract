@@ -1,0 +1,38 @@
+Select {rdt_id},
+{server_id},
+a.ID ABONENT_ID,
+a.TOWN_ID,
+c.CLOSED,
+a.IDENTIFICATION_NUMBER,
+a.NAME ABONENT_NAME,
+a.ABONENT_TYPE_ID,
+s.id segment_id,
+substr(s.name,1,4) segment,
+a.ADDRESS_ID,
+a.RNN,
+a.ACCOUNT,
+a.BANK_ID,
+a.BUDGET_ID,
+b.corp_client_id,
+a.BRANCH_ID,
+a.ORGANIZATION_TYPE_ID,
+a.USER_ID,a.PASSPORT,a.WORK_PLACE_ID,
+a.IDENTIFICATION_BANK_ACCOUNT,
+c.PROVIDER_ID,
+c.CONTRACT,
+c.OPEN_DATE,
+c.CLOSE_DATE,
+case when c.CLOSED=0 and c.CLOSE_DATE<sysdate then 1 else c.CLOSED end Flag_CNTR,
+c.DEF_ABONENT_GROUP_ID,
+c.SYS_DATE,sysdate IMPORT_DATE
+from db.abonent a,
+     db.contract c,
+     db.budget b,
+     db.ms_segment s,
+     db.ms_market_segment ms,
+     db.ms_user_group ug,
+     db.ms_user_type ut
+where a.id=c.abonent_id and 1=c.provider_id  and a.id>0
+and a.BUDGET_ID=b.id
+and b.ms_user_type_id=ut.id and ut.ms_user_group_id=ug.id
+and ug.ms_market_segment_id=ms.id and ms.ms_segment_id=s.id;
