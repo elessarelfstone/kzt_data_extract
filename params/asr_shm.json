@@ -1,0 +1,8 @@
+{
+  "tns": "(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.8.29.7)(PORT = 1521)) ) (CONNECT_DATA = (SERVICE_NAME = shymasr) ) )",
+  "code": "asr_shm",
+  "pass": "ciuyrhvv",
+  "user": "reporter",
+  "rdt_id": "5",
+  "server_id": "106"
+}

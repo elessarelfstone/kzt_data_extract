@@ -1,0 +1,6 @@
+{
+  "tns": "(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.8.8.134)(PORT = 1521)) ) (CONNECT_DATA = (SID = megaline1) ) )",
+  "code": "bmg_main",
+  "pass": "ciuyrhvv",
+  "user": "reporter"
+}

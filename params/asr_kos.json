@@ -1,0 +1,8 @@
+{
+  "tns": "(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.189.214.4)(PORT = 1521)) ) (CONNECT_DATA = (SERVICE_NAME = kostasr.kustanai) ) )",
+  "code": "asr_kos",
+  "pass": "ciuyrhvv",
+  "user": "reporter",
+  "rdt_id": "4",
+  "server_id": "69"
+}

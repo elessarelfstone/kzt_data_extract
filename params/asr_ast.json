@@ -1,0 +1,8 @@
+{
+  "tns": "(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.72.1.50)(PORT = 1521)) ) (CONNECT_DATA = (SERVICE_NAME = orcl.Astanatelecom) ) )",
+  "code": "asr_ast",
+  "pass": "ciuyrhvv",
+  "user": "reporter",
+  "rdt_id": "1",
+  "server_id": "73"
+}
