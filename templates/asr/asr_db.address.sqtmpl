@@ -1,0 +1,11 @@
+select  1 as RDT_ID,
+        48 as SERVER_ID,
+        t.ID ADDRESS_ID,
+        t.STREET_ID,
+        t.HOUSE,
+        t.FLAT,
+        t.SUB_HOUSE,
+        t.SUB_FLAT,
+        t.ZIP,
+        sysdate IMPORT_DATE
+from db.address t;

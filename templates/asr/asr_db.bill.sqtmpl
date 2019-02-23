@@ -1,0 +1,7 @@
+SELECT
+    {rdt_id},
+    {server_id},
+    t.*,
+    sysdate IMPORT_DATE
+FROM db.BILL t
+where t.REPORT_DATE_ID = to_number(TO_CHAR(SYSDATE,'MM'));

@@ -11,6 +11,10 @@ class AsrUra(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrKar(luigi.WrapperTask):
@@ -22,6 +26,10 @@ class AsrKar(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrAla(luigi.WrapperTask):
@@ -33,6 +41,10 @@ class AsrAla(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrAkt(luigi.WrapperTask):
@@ -44,6 +56,10 @@ class AsrAkt(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrAktb(luigi.WrapperTask):
@@ -55,6 +71,10 @@ class AsrAktb(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrAst(luigi.WrapperTask):
@@ -77,6 +97,10 @@ class AsrAtr(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrKok(luigi.WrapperTask):
@@ -88,6 +112,10 @@ class AsrKok(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrKos(luigi.WrapperTask):
@@ -99,6 +127,10 @@ class AsrKos(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrKzl(luigi.WrapperTask):
@@ -110,6 +142,10 @@ class AsrKzl(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrOsk(luigi.WrapperTask):
@@ -121,6 +157,10 @@ class AsrOsk(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrPav(luigi.WrapperTask):
@@ -132,6 +172,10 @@ class AsrPav(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrPet(luigi.WrapperTask):
@@ -143,6 +187,10 @@ class AsrPet(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrSem(luigi.WrapperTask):
@@ -154,6 +202,10 @@ class AsrSem(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrShm(luigi.WrapperTask):
@@ -165,6 +217,10 @@ class AsrShm(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrTal(luigi.WrapperTask):
@@ -176,6 +232,10 @@ class AsrTal(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")
 
 
 class AsrTar(luigi.WrapperTask):
@@ -187,3 +247,7 @@ class AsrTar(luigi.WrapperTask):
         yield att.AsrTdrTable(file=file, table="db.abonent")
         yield att.AsrAbonentTable(file=file, table="db.tdr")
         yield att.AsrDeviceTable(file=file, table="db.device")
+        yield att.AsrAddressTable(file=file, table="db.address")
+        yield att.AsrBillTable(file=file, table="db.bill")
+        yield att.AsrPaymentTable(file=file, table="db.payment")
+        yield att.AsrSaldoTable(file=file, table="db.saldo")

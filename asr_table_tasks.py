@@ -12,3 +12,19 @@ class AsrAbonentTable(ost.OraTable):
 class AsrDeviceTable(ost.OraTable):
     pass
 
+
+class AsrAddressTable(ost.OraTable):
+    pass
+
+
+class AsrBillTable(ost.OraTable):
+    pass
+
+
+class AsrPaymentTable(ost.OraTable):
+    pass
+
+
+class AsrSaldoTable(ost.OraTable):
+    pass
+

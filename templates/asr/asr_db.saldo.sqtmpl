@@ -1,0 +1,39 @@
+SELECT
+    {rdt_id},
+    {server_id},
+    s.ABONENT_ID,
+    a.TOWN_ID,
+    a.ABONENT_TYPE_ID,
+    s.bill_type_id,
+    s.report_date_id TM,
+    case when s.out_money<0 then -1 when s.out_money>0
+         then 1 else 0 end FLAG_SALDO,
+    case when (s.debit+s.change_in_debit+s.change_debit) > 0
+            then 1
+         when (s.debit+s.change_in_debit+s.change_debit) < 0 then -1
+         else 0 end FLAG_debit,
+    case when (s.credit+s.change_in_credit+s.change_credit)>0 then 1 when (s.credit+s.change_in_credit+s.change_credit)<0 then -1 else 0 end FLAG_credit,
+    s.in_money,
+    s.debit,
+    (s.change_in_debit+s.change_debit) change_debit,
+    s.credit,
+    (s.change_in_credit+s.change_credit) change_credit,
+    s.out_money,
+    s.from_date,
+    s.to_date,
+    b.name bill_type_name,
+    b.is_base,
+    b.Is_advanced,
+    b.provider_id bill_provider_id,
+    b.saldo_type_id,
+    b.pod_bill_type_id,
+    b.poc_bill_type_id,
+    b.ias_bill_type_id,
+    a.BUDGET_ID,
+    sysdate IMPORT_DATE
+FROM db.saldo s,
+     db.abonent a,
+     db.bill_type b
+WHERE s.abonent_id=a.id and
+      s.bill_type_id=b.id and
+      s.REPORT_DATE_ID=to_number(TO_CHAR(SYSDATE,'MM'))  ;
