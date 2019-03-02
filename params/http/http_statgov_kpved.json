@@ -1,0 +1,8 @@
+{
+ "url":"http://stat.gov.kz/getImg?id=ESTAT116569",
+ "name": "statgov_kpved",
+ "ext": "xls",
+ "structure": ["code", "name_kaz", "name_rus"],
+ "index": "code",
+ "description": "Классификатор продукции по видам экономической деятельности"
+}
