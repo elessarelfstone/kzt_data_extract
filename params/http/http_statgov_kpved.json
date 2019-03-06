@@ -3,6 +3,9 @@
  "name": "statgov_kpved",
  "ext": "xls",
  "structure": ["code", "name_kaz", "name_rus"],
+ "skiprows": 3,
  "index": "code",
- "description": "Классификатор продукции по видам экономической деятельности"
+ "description": "Классификатор продукции по видам экономической деятельности",
+ "sheets" : [0]
 }
+

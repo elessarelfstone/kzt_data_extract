@@ -1,0 +1,11 @@
+{
+ "url":"http://stat.gov.kz/getImg?id=WC16200004875",
+ "name": "statgov_kurk",
+ "ext": "xls",
+ "structure": ["code", "name_kaz", "name_rus"],
+ "skiprows": 1,
+ "index": "code",
+ "description": "Кодификатор улиц Республики Казахстан",
+ "sheets" : [0]
+}
+

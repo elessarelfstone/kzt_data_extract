@@ -3,8 +3,8 @@
  "name": "statgov_oked",
  "ext": "xlsx",
  "structure": ["code", "name_kaz", "name_rus"],
- "skiprows": [5],
- "sheet" : [None],
+ "skiprows": 4,
+ "sheets" : [0],
  "index": "code",
  "description": "Общий классификатор видов экономической деятельности"
 }

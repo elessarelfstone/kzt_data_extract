@@ -1,0 +1,10 @@
+{
+ "url":"http://stat.gov.kz/getImg?id=ESTAT093569",
+ "name": "statgov_mkeis",
+ "ext": "xlsx",
+ "structure": ["code", "name_kaz", "name_rus"],
+ "skiprows": 5,
+ "index": "code",
+ "description": "Межгосударственный классификатор единиц измерения и счета",
+ "sheets" : [0]
+}

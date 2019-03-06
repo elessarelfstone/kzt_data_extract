@@ -1,0 +1,12 @@
+{
+ "url":"http://stat.gov.kz/getImg?id=ESTAT245918",
+ "name": "statgov_kato",
+ "ext": "rar",
+ "files": ["katonew1.xls", "katonew2.xls"],
+ "structure": ["te", "ab", "cd", "ef", "hij", "k", "name_kaz", "name_rus", "nn"],
+ "skiprows": 1,
+ "index": "te",
+ "description": "Классификатор административно-территориальных объектов",
+ "sheets" : [0]
+}
+
