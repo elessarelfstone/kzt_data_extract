@@ -1,5 +1,7 @@
 import json
 import os
+import glob
+import shutil
 from collections import namedtuple
 
 class Utils():
@@ -47,3 +49,20 @@ class Utils():
         """
         return Utils.params_named_tuple(Utils.params_file_path(file))
 
+    @staticmethod
+    def delete_sub_folders(root_dir):
+        sub_folders_list = glob.glob(root_dir)
+        for sub_folder in sub_folders_list:
+            shutil.rmtree(sub_folder)
+
+    @staticmethod
+    def delete_files(dir, except_ext):
+        for _, _, files in os.walk(dir):
+            for file in files:
+                if file.lower().endswith(except_ext):
+                    os.remove()
+
+    @staticmethod
+    def clean_dir(dir_path, exc_ext):
+        Utils.delete_sub_folders(dir_path)
+        Utils.delete_files(dir_path, exc_ext)
