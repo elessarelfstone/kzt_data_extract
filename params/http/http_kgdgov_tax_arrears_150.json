@@ -1,0 +1,13 @@
+{
+ "url":"http://kgd.gov.kz/mobile_api/services/taxpayers_unreliable_exportexcel/TAX_ARREARS_150/KZ_ALL/fileName/list_TAX_ARREARS_150_KZ_ALL.xlsx",
+ "name": "kgdgov_tax_arrears_150",
+ "ext": "xlsx",
+ "structure": ["num", "region", "office_of_tax_enforcement", "ote_id", "bin", "rnn", "taxpayer_organization_ru",
+         "taxpayer_organization_kz", "last_name_kz", "first_name_kz", "middle_name_kz", "last_name_ru", "first_name_ru",
+         "middle_name_ru", "owner_iin", "owner_rnn", "owner_name_kz", "owner_name_ru", "economic_sector", "total_due",
+         "sub_total_main", "sub_total_late_fee", "sub_total_fine"],
+ "skiprows": 6,
+ "sheets" : [0, 1],
+ "index": "num",
+ "description": "Список налогоплательщиков ЮЛ, имеющих налоговую задолженность болле 150 МРП"
+}

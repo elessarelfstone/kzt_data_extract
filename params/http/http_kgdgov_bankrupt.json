@@ -1,0 +1,11 @@
+{
+ "url":"http://kgd.gov.kz/mobile_api/services/taxpayers_unreliable_exportexcel/BANKRUPT/KZ_ALL/fileName/list_BANKRUPT_KZ_ALL.xlsx",
+ "name": "kgdgov_bankrupt",
+ "ext": "xlsx",
+ "structure": ["num", "bin", "rnn", "taxpayer_organization", "taxpayer_name", "owner_name", "owner_iin", "owner_rnn",
+         "court_decision", "court_decision_date"],
+ "skiprows": 3,
+ "sheets" : [0],
+ "index": "num",
+ "description": "Список налогоплательщиков, признанных банкротами"
+}

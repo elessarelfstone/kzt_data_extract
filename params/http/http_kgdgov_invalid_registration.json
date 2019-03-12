@@ -1,0 +1,11 @@
+{
+ "url":"http://kgd.gov.kz/mobile_api/services/taxpayers_unreliable_exportexcel/INVALID_REGISTRATION/KZ_ALL/fileName/list_INVALID_REGISTRATION_KZ_ALL.xlsx",
+ "name": "kgdgov_invalid_registration",
+ "ext": "xlsx",
+ "structure": ["num", "bin", "rnn", "taxpayer_organization", "taxpayer_name", "owner_name", "owner_iin", "owner_rnn",
+         "court_decision_no", "court_decision_date"],
+ "skiprows": 3,
+ "sheets" : [0],
+ "index": "num",
+ "description": "Список налогоплательщиков, регистрация которых признана недействительной"
+}
