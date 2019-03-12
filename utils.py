@@ -66,3 +66,5 @@ class Utils():
     def clean_dir(dir_path, exc_ext):
         Utils.delete_sub_folders(dir_path)
         Utils.delete_files(dir_path, exc_ext)
+
+

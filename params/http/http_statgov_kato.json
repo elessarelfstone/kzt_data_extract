@@ -3,7 +3,7 @@
  "name": "statgov_kato",
  "ext": "rar",
  "files": ["katonew1.xls", "katonew2.xls"],
- "structure": ["te", "ab", "cd", "ef", "hij", "k", "name_kaz", "name_rus", "nn", "tmp"],
+ "structure": ["te", "ab", "cd", "ef", "hij", "k", "name_kaz", "name_rus", "nn"],
  "skiprows": 1,
  "index": "te",
  "description": "Классификатор административно-территориальных объектов",

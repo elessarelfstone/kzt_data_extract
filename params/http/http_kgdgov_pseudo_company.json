@@ -1,0 +1,11 @@
+{
+ "url":"http://kgd.gov.kz/mobile_api/services/taxpayers_unreliable_exportexcel/PSEUDO_COMPANY/KZ_ALL/fileName/list_PSEUDO_COMPANY_KZ_ALL.xlsx",
+ "name": "kgdgov_pseudo_company",
+ "ext": "xlsx",
+ "structure": ["num", "bin", "rnn", "taxpayer_organization", "taxpayer_name", "owner_name", "owner_iin", "owner_rnn",
+         "court_decision", "illegal_activity_start_date"],
+ "skiprows": 3,
+ "sheets" : [0],
+ "index": "num",
+ "description": "Список налогоплательщиков, признанных лжепредприятиями"
+}

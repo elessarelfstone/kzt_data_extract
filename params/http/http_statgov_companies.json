@@ -1,0 +1,13 @@
+{
+ "urls_location":"http://stat.gov.kz/faces/publicationsPage/publicationsOper/homeNumbersBusinessRegisters/homeNumbersBusinessRegistersReestr",
+ "base_url": "http://stat.gov.kz",
+ "name": "statgov_companies",
+ "ext": ["zip", "xls"],
+ "structure": ["bin", "full_name_kz", "full_name_ru", "registration_date", "oked_1", "activity_kz", "activity_ru", "oked_2", "krp", "krp_name_kz", "krp_name_ru", "kato", "settlement_kz", "settlement_ru", "legal_address", "head_fio"],
+ "skiprows": 4,
+ "sheets" : [0],
+ "index": "full_name_ru",
+ "html_container_attrs" : {"id" :  "pt1:r1:0:j_id__ctru0pc3:pgl4"},
+ "html_url_regexp" : "ESTAT",
+ "description": "Список компаний"
+}
