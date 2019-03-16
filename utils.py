@@ -7,7 +7,7 @@ from collections import namedtuple
 class Utils():
 
     @staticmethod
-    def load_params(file):
+    def read_text(file):
         """
         Load parameters for task from json file
         :param file:
@@ -36,7 +36,7 @@ class Utils():
         :param file_path: path of params file
         :return: namedtuple object
         """
-        p = json.loads(Utils.load_params(file_path))
+        p = json.loads(Utils.read_text(file_path))
         Params = namedtuple("Params", sorted(p))
         return Params(**p)
 
@@ -60,7 +60,7 @@ class Utils():
         for _, _, files in os.walk(dir):
             for file in files:
                 if file.lower().endswith(except_ext):
-                    os.remove()
+                    os.remove(file)
 
     @staticmethod
     def clean_dir(dir_path, exc_ext):

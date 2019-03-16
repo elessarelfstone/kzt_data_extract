@@ -15,6 +15,7 @@ from excel_parsing import ExcelParsing
 
 
 class DownloadFile(luigi.Task):
+
     file = luigi.Parameter()
 
     def source_file_path(self):
@@ -125,42 +126,29 @@ class CollectArchiveToCsv(luigi.Task):
     def run(self):
         self.collect_from_xlss()
 
-        # return [CollectExcelFileToCsv(file=self.file) for member in self.input()]
 
-class ExtractArchive(luigi.Task):
+class CollectArchivesToCsv(luigi.Task):
 
     file = luigi.Parameter()
 
+    def collect_from_xlss(self):
+        xl_files_path = [file.path for file in self.input()]
+        data = ExcelParsing.parse_files(self.file, xl_files_path)
+        data = data.iloc[:, 0:len(Utils.params(self.file).structure)]
+        data.columns = Utils.params(self.file).structure
+        data.to_csv(self.output().path, sep=';', encoding='utf-8', header=None, index=None)
+
     def requires(self):
-        return DownloadFile(file=self.file)
+        return ExtractArchives(file=self.file)
 
     def output(self):
-        return [luigi.LocalTarget(os.path.join(os.getenv('DATA_DIR'), 'http', file)) for file in Utils.params(self.file).files]
+        folder = os.path.dirname(self.input()[0].path)
+        file = "{}.csv".format(Utils.params(self.file).name)
+        path = os.path.join(folder, file)
+        return luigi.LocalTarget(path)
 
     def run(self):
-        ext = os.path.splitext(self.input().path)[-1]
-        if ext == '.rar':
-            arch = RarFile(self.input().path)
-        elif ext == '.zip':
-            arch = zipfile.ZipFile(self.input().path)
-
-        for f in arch.namelist():
-            if os.path.basename(f) in [os.path.basename(out.path) for out in self.output()]:
-                # temp = os.path.join(os.getenv('TEMP_DIR'), f)
-                target = os.path.join(os.getenv('DATA_DIR'), 'http', f)
-                arch.extract(f, os.path.join(os.getenv('DATA_DIR'), 'http'))
-                copyfile(target, os.path.join(os.getenv('DATA_DIR'), 'http', os.path.basename(f)))
-
-
-class ExtractArchives(luigi.Task):
-
-    file = luigi.Parameter()
-
-    def requires(self):
-        DownloadFiles(file=self.file)
-
-    def output(self):
-        [ExtractArchive(file=self) for ]
+        self.collect_from_xlss()
 
 
 class HttpStatGovOKED(CollectExcelFileToCsv):
@@ -184,6 +172,10 @@ class HttpStatGovMKEIS(CollectExcelFileToCsv):
 
 
 class HttpStatGovKATO(CollectArchiveToCsv):
+    pass
+
+
+class HttpStatGovCompanies(CollectArchivesToCsv):
     pass
 
 

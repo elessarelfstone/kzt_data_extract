@@ -1,7 +1,7 @@
 {
   "tns": "(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.71.200.15)(PORT = 1521)) ) (CONNECT_DATA = (SERVICE_NAME = uralasr.weskaz) ) )",
   "code": "asr_ura",
-  "pass": "ciuyrhvv",
+  "password": "ciuyrhvv",
   "user": "reporter",
   "rdt_id": "3",
   "server_id": "64"

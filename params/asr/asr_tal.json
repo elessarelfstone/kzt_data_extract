@@ -1,7 +1,7 @@
 {
   "tns": "(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.8.29.5)(PORT = 1521)) ) (CONNECT_DATA = (SERVICE_NAME = taldasr) ) )",
   "code": "asr_tal",
-  "pass": "ciuyrhvv",
+  "password": "ciuyrhvv",
   "user": "reporter",
   "rdt_id": "6",
   "server_id": "75"

@@ -1,7 +1,7 @@
 {
   "tns": "(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.189.214.14)(PORT = 1521)) ) (CONNECT_DATA = (SERVICE_NAME = petrasr.NorthKaz) ) )",
   "code": "asr_pet",
-  "pass": "ciuyrhvv",
+  "password": "ciuyrhvv",
   "user": "reporter",
   "rdt_id": "5",
   "server_id": "105"
